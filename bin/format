@@ -1,0 +1,13 @@
+#!/bin/bash -xe
+cd "$(dirname "$0")"/../
+
+
+echo
+echo "Fixing imports..."
+echo
+isort .
+
+echo
+echo "Fixing code style..."
+echo
+black .
